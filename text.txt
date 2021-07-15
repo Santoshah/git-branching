@@ -37,3 +37,9 @@ Deleting Branches
 -----------------------------------------
 git branch -d branch_name
 //You cannot delete head branch.
+
+
+
+undo last merge
+---------------------
+git reset --hard HEAD~1
