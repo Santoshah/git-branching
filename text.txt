@@ -1,0 +1,39 @@
+This will create a new branch from the commited id mentioned in revision_id
+git branch branch-name revision_id
+
+
+Changing Different branch
+
+git checkout branch_name
+git switch branch_name
+git  branch -m branch_name
+
+
+Rename local Branch
+
+git branch -m branch_name new_branch_name
+
+
+
+Renaming branch at remote
+-----------------------------
+
+First, delete the current  /old branch
+git push origin --delete branch_name
+
+Than, Simply push the new local branch with the correct name:
+git push -u origin new branch_name
+
+
+Pulling + Pushing Branch
+Synchronzing your local + remote branches
+-----------------------------------------
+git pull
+git push 
+
+git branch -v
+
+Deleting Branches
+-----------------------------------------
+git branch -d branch_name
+//You cannot delete head branch.
