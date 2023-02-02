@@ -43,3 +43,12 @@ git branch -d branch_name
 undo last merge
 ---------------------
 git reset --hard HEAD~1
+
+git rebase --quit
+
+git rebase --merge branch-name
+git rebase -i HEAD~2
+
+
+touch .git/rebase-merge/head-name
+git rebase --abort
